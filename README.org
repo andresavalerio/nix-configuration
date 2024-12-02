@@ -1,0 +1,11 @@
+* Nix Darwin Configuration
+
+The config files for my Nix-darwin on MacOS, built with :heart: and Nix by Andresa Valério
+
+** Why Nix?
+Many of my clients use MacOS environment
+
+
+** Flakes
+
+darwin-rebuild switch --flake ~/.config/nix-darwin
