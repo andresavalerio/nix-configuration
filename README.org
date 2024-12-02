@@ -3,9 +3,20 @@
 The config files for my Nix-darwin on MacOS, built with :heart: and Nix by Andresa Valério
 
 ** Why Nix?
-Many of my clients use MacOS environment
+Many of my clients use MacOS environment. You can certanly say that the most used package manager is [[https://brew.sh][Homebrew]], and I use it for simpler jobs.
 
+However, I see four main reasons to use Nix instead:
+
+1. More control over versions;
+2. Simpler way to change machine without losing environment;
+3. It is compatible with my current personal environment, which is NixOS;
+4. It's fun.
+
+I pretend to make a more detailed article about this in future.
 
 ** Flakes
 
+#+begin_src sh :results output
 darwin-rebuild switch --flake ~/.config/nix-darwin
+nix run nix-darwin -- switch --flake ~/.config/nix-darwin
+#+end_src
