@@ -7,6 +7,8 @@
   nixpkgs.config.allowBroken = true;
   nixpkgs.hostPlatform = "aarch64-darwin";
 
+  nix.settings.experimental-features = [ "flakes" "nix-command" ];
+
   environment.systemPackages = with pkgs;
     [ python312
     python312Packages.virtualenv
@@ -16,6 +18,7 @@
     mongodb
     pre-commit
     gcc
+    devenv
     ];
 
 fonts = {
